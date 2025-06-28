@@ -7,10 +7,3 @@ services:
     startCommand: pnpm start
     repo: https://github.com/williamdeosampaio/Flowise
     branch: main
-    envVars:
-      - key: FLOWISE_USERNAME
-        value: admin
-      - key: FLOWISE_PASSWORD
-        value: klub2025
-      - key: FLOWISE_PORT
-        value: 3000
