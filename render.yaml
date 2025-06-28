@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: flowise-klub
+    env: node
+    plan: free
+    buildCommand: pnpm install --frozen-lockfile && pnpm build
+    startCommand: pnpm start
+    repo: https://github.com/williamdeosampaio/Flowise
+    branch: main
+    envVars:
+      - key: FLOWISE_USERNAME
+        value: admin
+      - key: FLOWISE_PASSWORD
+        value: klub2025
+      - key: FLOWISE_PORT
+        value: 3000
